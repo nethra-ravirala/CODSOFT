@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="calc-container">
+        <div class="calc-display" id="calcDisplay">0</div>
+        <div class="calc-buttons">
+            <button onclick="handleClearEntry()">CE</button>
+            <button onclick="handleClear()">C</button>
+            <button onclick="handleBackspace()">⌫</button>
+            <button class="operator" onclick="handleOperator('/')">÷</button>
+            <button onclick="handleNumber(7)">7</button>
+            <button onclick="handleNumber(8)">8</button>
+            <button onclick="handleNumber(9)">9</button>
+            <button class="operator" onclick="handleOperator('*')">×</button>
+            <button onclick="handleNumber(4)">4</button>
+            <button onclick="handleNumber(5)">5</button>
+            <button onclick="handleNumber(6)">6</button>
+            <button class="operator" onclick="handleOperator('-')">-</button>
+            <button onclick="handleNumber(1)">1</button>
+            <button onclick="handleNumber(2)">2</button>
+            <button onclick="handleNumber(3)">3</button>
+            <button class="operator" onclick="handleOperator('+')">+</button>
+            <button onclick="handleNumber('00')">00</button>
+            <button onclick="handleNumber(0)">0</button>
+            <button onclick="handleDecimal()">.</button>
+            <button class="operator" onclick="handleOperator('%')">%</button>
+            <button class="operator" onclick="handlecube()">x³</button>
+            <button class="operator" onclick="handleSquareRoot()">√</button>
+            <button class="operator" onclick="handlesquare()">x²</button>
+            <button class="operator" onclick="handleEqual()">=</button>
+        </div>
+    </div>
+    <script src="abc.js"></script>
+</body>
+</html>
